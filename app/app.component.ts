@@ -3,11 +3,14 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
     <h1>{{title}}</h1>
-    <a routerLink="/dashboard">Dashboard</a>
-    <a routerLink="/heroes">Heroes</a>
-    <a routerLink="/customHeroes">Custom Heroes</a>
+  	  <nav>
+	     <a routerLink="/dashboard">Dashboard</a>
+	    <a routerLink="/heroes">Heroes</a>
+	    <a routerLink="/customHeroes">Custom Heroes</a>
+	  </nav>
     <router-outlet></router-outlet>
-  `
+  `,
+  styleUrls: ['app.component.css'],
 })
 export class AppComponent {
   title = 'Tour of Heroes';
